@@ -1,0 +1,44 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100dvh;
+  gap: 1.5em;
+  text-align: center;
+}
+
+.game-container h2 span {
+  color: var(--accent);
+}
+
+.gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 500px;
+  border: 2px solid var(--secondry);
+  margin: 0 auto;
+}
+
+.gameboard .square {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  border: 1px solid var(--secondry);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameboard .square h2 {
+  font-family: cursive;
+  font-size: 6em;
+}
+
+.gameboard .square .circle {
+  color: var(--circle);
+}
+
+.gameboard .square .cross {
+  color: var(--cross);
+}
